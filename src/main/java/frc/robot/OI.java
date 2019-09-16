@@ -6,15 +6,8 @@ import frc.robot.commands.*;
 
 public class OI {
     public OI(){
-        Robot.joystick.whenHeld(SubsystemJoystick.d_B, new CommandReductionBox());
-        Robot.joystick.whenReleased(SubsystemJoystick.d_B, new CommandReductionBoxOFF());
-        Robot.joystick.whenReleased(SubsystemJoystick.d_X, new CommandReductionBoxOFF());
-        Robot.joystick.whenHeld(SubsystemJoystick.d_X, new CommandReductionBoxAntClockWise());
-    
-    ///Solenoid
-    
-        Robot.joystick.whenPressed(SubsystemJoystick.d_Y, new CommandSolenoidGopress());
-        Robot.joystick.whenHeld(SubsystemJoystick.d_A, new CommandSolenoidGo(true));
-        Robot.joystick.whenReleased(SubsystemJoystick.d_A, new CommandSolenoidGo(false));
+        Robot.joystick.whenHeld(SubsystemJoystick.d_RT, new CommandIntakeCargo(0.4));
+        Robot.joystick.whenHeld(SubsystemJoystick.d_LT, new CommandIntakeCargo(-0.4));
+        Robot.joystick.whenPressed(SubsystemJoystick.d_A, new CommandIntakeHatch());
     }
 }

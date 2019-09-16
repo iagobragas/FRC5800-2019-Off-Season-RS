@@ -5,16 +5,16 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import frc.robot.subsystems.SubsystemCaixaDeReducao;
 import frc.robot.subsystems.SubsystemDriver;
 import frc.robot.subsystems.SubsystemJoystick;
-import frc.robot.subsystems.SubsystemSolenoid;
+import frc.robot.subsystems.SubsystemIntakeCargo;
+import frc.robot.subsystems.SubsystemIntakeHatch;
 
 public class Robot extends TimedRobot {
-  public static SubsystemCaixaDeReducao caixaDeReducao = new SubsystemCaixaDeReducao();
-  public static SubsystemSolenoid solenoid = new SubsystemSolenoid();
   public static SubsystemDriver driver = new SubsystemDriver();
   public static SubsystemJoystick joystick = new SubsystemJoystick();
+  public static SubsystemIntakeCargo intakeCargo = new SubsystemIntakeCargo();
+  public static SubsystemIntakeHatch intakeHatch = new SubsystemIntakeHatch();
 
   public static OI m_oi;
   

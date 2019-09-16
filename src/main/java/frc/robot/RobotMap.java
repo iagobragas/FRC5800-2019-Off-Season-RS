@@ -15,15 +15,12 @@ public class RobotMap {
 	DRIVE_MOTOR_FL_ID = 2, 
 	DRIVE_MOTOR_RR_ID = 1, 
 	DRIVE_MOTOR_RL_ID = 3,
-  MOTOR_REDUCTIONBOX_1_ID = 4,
-  MOTOR_REDUCTIONBOX_2_ID = 5;
+	INTAKE_CARGO_ID = 4,
+	INTAKE_HATCH_ID = 5;
 
 	/* Solenoid (0 - 7) */
-	public static final int 
-	INTAKE_HATCH_ID = 0,
-  INTAKE_CARGO_ID = 1,
-  SOLENOID_ID = 3;
-
+	public static final int
+	SOLENOID_ID = 0;
 	/* Digital I/Os (0 - 9) */
 	public static final int 
 	DRIVE_ENCODER_R1_ID = 1, 
